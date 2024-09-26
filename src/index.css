@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider {
+  width: max-content;
+  animation: slide 25s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+.bg-services-section {
+  background-image: url(./assets/images/mountainDrone.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.bg-div-services-section {
+  background-color: #3b0def74;
+}
+.picture-slide-right > div {
+  transition-property: right;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-right:hover > div {
+  right: 0;
+  transition-property: right;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-down > div {
+  transition-property: bottom;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-down:hover > div {
+  bottom: 0;
+  transition-property: bottom;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-left > div {
+  transition-property: left;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-left:hover > div {
+  left: 0;
+  transition-property: left;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-up > div {
+  transition-property: top;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.picture-slide-up:hover > div {
+  top: 0;
+  transition-property: top;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.text-mild {
+  font-size: 12px;
+  line-height: 1rem;
+}
